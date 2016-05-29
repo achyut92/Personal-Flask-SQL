@@ -1,0 +1,4 @@
+Flask==0.10.1
+gunicorn==19.3.0
+sqlalchemy==1.0.8
+MySQL-python==1.2.5
