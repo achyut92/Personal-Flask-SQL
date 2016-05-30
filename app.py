@@ -76,6 +76,9 @@ def addValue():
     json_value = data.values()
     if not request.json:
         abort(400)
+        
+    if not json_key[0] or not json_value[0]:
+        return 'Please give a key and a value.'
     
     if is_duplicate_key(json_key):
         store = db.session.query(Store).filter_by(store_key=json_key).first()
