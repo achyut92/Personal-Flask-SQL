@@ -100,8 +100,12 @@ def server_error(e):
     return 'Try with valid data'
 
 @app.errorhandler(400)
-def server_error(e):
+def invalid_data_error(e):
     return 'Try with valid data'
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return 'Try with valid URL'
 
 
 def is_duplicate_key(key):
