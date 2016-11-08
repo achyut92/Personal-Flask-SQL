@@ -1,4 +1,4 @@
-# vaultDragon
+# Flask API
 The Application is hosted on Heroku and the Database on Google Cloud.
 
 Below are the links to the various endpoints:
